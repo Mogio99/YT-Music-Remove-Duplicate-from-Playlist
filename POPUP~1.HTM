@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" class="logo" />
+    <div>
+      <h1>YTM Duplicate Cleaner</h1>
+      <p class="sub">YOUTUBE MUSIC PLAYLIST</p>
+    </div>
+  </header>
+
+  <div id="message" class="message hidden"></div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="num" id="statTotal">–</div>
+      <div class="lbl">BRANI TOTALI</div>
+    </div>
+    <div class="stat">
+      <div class="num red" id="statDupes">–</div>
+      <div class="lbl">DUPLICATI</div>
+    </div>
+  </div>
+
+  <div id="groups" class="groups"></div>
+
+  <div class="actions">
+    <button id="btnScan" class="btn primary">🔍 Scansiona duplicati</button>
+    <button id="btnRemove" class="btn danger hidden">🗑 Rimuovi duplicati</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
